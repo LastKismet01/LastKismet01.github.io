@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>我的第一个网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>你好！这是我的 GitHub 网站</h1>
+    <p>我正在学习前端开发 🚀</p>
+  </div>
+</body>
+</html>
