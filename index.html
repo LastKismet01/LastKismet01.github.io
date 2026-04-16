@@ -1,198 +1,399 @@
-<!doctype html>
-<html lang="zh-CN" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-简介" data-has-hydrated="false">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.2">
-<title data-rh="true">简介 | LastKismit's blog</title>
-<meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1">
-<meta data-rh="true" name="twitter:card" content="summary_large_image">
-<meta data-rh="true" property="og:image" content="https://attach.acgo.cn/picture/8bb65ad3072347398356c83dca3bd572.png">
-<meta data-rh="true" name="twitter:image" content="https://cchu2026.github.io/myblog/img/logo.jpeg">
-<meta data-rh="true" property="og:url" content="https://cchu2026.github.io/myblog/">
-<meta data-rh="true" property="og:locale" content="zh_CN">
-<meta data-rh="true" name="docusaurus_locale" content="zh_CN">
-<meta data-rh="true" name="docsearch:language" content="zh_CN">
-<meta data-rh="true" name="docusaurus_version" content="current">
-<meta data-rh="true" name="docusaurus_tag" content="docs-default-current">
-<meta data-rh="true" name="docsearch:version" content="current">
-<meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current">
-<meta data-rh="true" property="og:title" content="简介 | LastKismit's blog">
-<meta data-rh="true" name="description" content="你好，这里是 LastKismit 的学习博客！记录算法、编程学习的点点滴滴">
-<meta data-rh="true" property="og:description" content="你好，这里是 LastKismit 的学习博客！记录算法、编程学习的点点滴滴">
-<link data-rh="true" rel="icon" href="/myblog/img/logo.jpeg">
-<link data-rh="true" rel="canonical" href="https://cchu2026.github.io/myblog/">
-<link data-rh="true" rel="alternate" href="https://cchu2026.github.io/myblog/" hreflang="zh-CN">
-<link data-rh="true" rel="alternate" href="https://cchu2026.github.io/myblog/" hreflang="x-default">
-<script data-rh="true">function insertBanner(){var n=document.createElement("div");n.id="__docusaurus-base-url-issue-banner-container";n.innerHTML='\n<div id="__docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://docusaurus.io/docs/docusaurus.config.js/#baseUrl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/myblog/</span> </p>\n   <p>We suggest trying baseUrl = <span id="__docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n',document.body.prepend(n);var e=document.getElementById("__docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,o="/"===s.substr(-1)?s:s+"/";e.innerHTML=o}document.addEventListener("DOMContentLoaded",function(){void 0===window.docusaurus&&insertBanner()})</script>
-<script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"简介","item":"https://cchu2026.github.io/myblog/"}]}</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous">
-<link rel="stylesheet" href="/myblog/assets/css/styles.94c10ad9.css">
-<script src="/myblog/assets/js/runtime~main.2b46eaba.js" defer="defer"></script>
-<script src="/myblog/assets/js/main.9d41513a.js" defer="defer"></script>
+    <meta charset="UTF-8">
+    <title>LastKismit的OJ</title>
+    <!-- 引入Bootstrap样式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入Chart.js做图表 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <style>
+        body { background-color: #f5f7fa; }
+        .card { margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .navbar { background-color: #2d3748; }
+        .navbar-brand, .nav-link { color: white; }
+        .nav-link:hover { color: #ffc107; }
+        .login-btn, .register-btn { margin-left: 10px; }
+        .chart-card { height: 300px; }
+    </style>
 </head>
-<body class="navigation-with-keyboard">
-<svg style="display: none;"><defs>
-<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
-</defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-<div id="__docusaurus">
-<link rel="preload" as="image" href="/myblog/img/logo.jpeg">
-<div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div>
-<nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top">
-  <div class="navbar__inner">
-    <div class="theme-layout-navbar-left navbar__items">
-      <button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button">
-        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
-          <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path>
-        </svg>
-      </button>
-      <a class="navbar__brand" href="/myblog/">
-        <div class="navbar__logo">
-          <img src="/myblog/img/logo.jpeg" alt="LastKismit's blog Logo" class="themedComponent_mlkZ themedComponent--light_NVdE">
-          <img src="/myblog/img/logo.jpeg" alt="LastKismit's blog Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU">
-        </div>
-        <b class="navbar__title text--truncate">LastKismit's blog</b>
-      </a>
-      <a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/myblog/">Blogs</a>
-    </div>
-    <div class="theme-layout-navbar-right navbar__items navbar__items--right">
-      <a href="https://github.com/LastKismit" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a>
-      <div class="toggle_vylO colorModeToggle_DEke">
-        <button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）">
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR">
-            <path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path>
-          </svg>
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR">
-            <path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path>
-          </svg>
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC">
-            <path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="navbarSearchContainer_Bca1"></div>
-    </div>
-  </div>
-</nav>
-<div role="presentation" class="navbar-sidebar__backdrop"></div>
-<div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0">
-  <div class="docsWrapper_hBAB">
-    <button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button>
-    <div class="docRoot_UBD9">
-      <aside class="theme-doc-sidebar-container docSidebarContainer_YfHR">
-        <div class="sidebarViewport_aRkj">
-          <div class="sidebar_njMd">
-            <nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG">
-              <ul class="theme-doc-sidebar-menu menu__list">
-                <li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item">
-                  <a class="menu__link menu__link--active" aria-current="page" href="/myblog/">
-                    <span title="简介" class="linkLabel_WmDU">简介</span>
-                  </a>
-                </li>
-                <li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
-                  <div class="menu__list-item-collapsible">
-                    <a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/myblog/算法基础/递推">
-                      <span title="算法基础" class="categoryLinkLabel_W154">算法基础</span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </aside>
-      <main class="docMainContainer_TBSr">
-        <div class="container padding-top--md padding-bottom--lg">
-          <div class="row">
-            <div class="col docItemCol_VOVn">
-              <div class="docItemContainer_Djhp">
-                <article>
-                  <nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径">
-                    <ul class="breadcrumbs">
-                      <li class="breadcrumbs__item">
-                        <a aria-label="主页面" class="breadcrumbs__link" href="/myblog/">
-                          <svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT">
-                            <path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="breadcrumbs__item breadcrumbs__item--active">
-                        <span class="breadcrumbs__link">简介</span>
-                      </li>
-                    </ul>
-                  </nav>
-                  <div class="theme-doc-markdown markdown">
-                    <header><h1>简介</h1></header>
-                    <p>你好，这里是 LastKismit 的学习博客！</p>
-                    <p>本博客主要用于记录算法学习、编程练习的笔记和心得，包含算法基础、编程技巧、OJ刷题记录等内容，欢迎一起交流学习～</p>
-                    <div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa">
-                      <div class="codeBlockContent_QJqH">
-                        <pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa">
-                          <code class="codeBlockLines_e6Vv">
-                            <span class="token-line"><span class="token macro property directive-hash">#</span><span class="token macro property directive keyword">include</span><span class="token macro property"> </span><span class="token macro property string">&lt;bits/stdc++.h&gt;</span><br></span>
-                            <span class="token-line"><span class="token keyword">using</span><span class="token plain"> </span><span class="token keyword">namespace</span><span class="token plain"> std</span><span class="token punctuation">;</span><br></span>
-                            <span class="token-line"><span class="token keyword">int</span><span class="token plain"> </span><span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token plain"> </span><span class="token punctuation">{</span><br></span>
-                            <span class="token-line"><span class="token plain">    cout </span><span class="token operator">&lt;&lt;</span><span class="token plain"> </span><span class="token string">&quot;Hello, LastKismit's Learning Blog!&quot;</span><span class="token punctuation">;</span><br></span>
-                            <span class="token-line"><span class="token plain">    </span><span class="token keyword">return</span><span class="token plain"> </span><span class="token number">0</span><span class="token punctuation">;</span><br></span>
-                            <span class="token-line"><span class="token punctuation">}</span><br></span>
-                          </code>
-                        </pre>
-                      </div>
-                    </div>
-                  </div>
-                  <footer class="theme-doc-footer docusaurus-mt-lg">
-                    <div class="row margin-top--sm theme-doc-footer-edit-meta-row">
-                      <div class="col noPrint_WFHX"></div>
-                      <div class="col lastUpdated_JAkA">
-                        <span class="theme-last-updated">最后<!-- -->由 <b>LastKismit</b> <!-- -->于 <b><time datetime="2026-04-06T03:01:04.000Z" itemprop="dateModified">2026年4月6日</time></b> <!-- -->更新</span>
-                      </div>
-                    </div>
-                  </footer>
-                </article>
-                <nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡">
-                  <a class="pagination-nav__link pagination-nav__link--next" href="/myblog/算法基础/递推">
-                    <div class="pagination-nav__sublabel">下一页</div>
-                    <div class="pagination-nav__label">递推</div>
-                  </a>
-                </nav>
-              </div>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LastKismit OJ</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">题库</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">比赛</a></li>
+                </ul>
+                <!-- 用户信息/登录注册按钮 -->
+                <div id="user-info" class="d-flex align-items-center">
+                    <button class="btn btn-light login-btn" onclick="showLoginModal()">登录</button>
+                    <button class="btn btn-warning register-btn" onclick="showRegisterModal()">注册</button>
+                </div>
             </div>
-          </div>
         </div>
-      </main>
+    </nav>
+
+    <!-- 登录弹窗 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">用户登录</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="login-username" class="form-label">用户名</label>
+                        <input type="text" class="form-control" id="login-username" placeholder="输入用户名">
+                    </div>
+                    <div class="mb-3">
+                        <label for="login-password" class="form-label">密码</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="输入密码">
+                    </div>
+                    <div id="login-msg" class="text-danger"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" onclick="login()">登录</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<footer class="theme-layout-footer footer footer--dark">
-  <div class="container container-fluid">
-    <div class="row footer__links">
-      <div class="theme-layout-footer-column col footer__col">
-        <div class="footer__title">更多</div>
-        <ul class="footer__items clean-list">
-          <li class="footer__item"><a class="footer__link-item" href="/myblog/">Blogs</a></li>
-          <li class="footer__item">
-            <a href="https://github.com/LastKismit" target="_blank" rel="noopener noreferrer" class="footer__link-item">
-              GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="theme-layout-footer-column col footer__col">
-        <div class="footer__title">社区</div>
-        <ul class="footer__items clean-list">
-          <li class="footer__item">
-            <a href="https://blog.csdn.net/LastKismit" target="_blank" rel="noopener noreferrer" class="footer__link-item">
-              CSDN<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+
+    <!-- 注册弹窗 -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">用户注册</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="reg-username" class="form-label">用户名</label>
+                        <input type="text" class="form-control" id="reg-username" placeholder="设置用户名">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reg-password" class="form-label">密码</label>
+                        <input type="password" class="form-control" id="reg-password" placeholder="设置密码">
+                    </div>
+                    <div id="reg-msg" class="text-danger"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-warning" onclick="register()">注册</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer__bottom text--center">
-      <div class="footer__copyright">Copyright © 2026 LastKismit. Built with Docusaurus.</div>
+
+    <!-- 主内容区 -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 左侧：问题跳转 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>问题跳转</h5>
+                    <input type="text" id="pid-input" class="form-control mb-2" placeholder="例：P1001">
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-danger w-50" onclick="gotoProblem()">跳转</button>
+                        <button class="btn btn-primary w-50" onclick="randomProblem()">随机跳题</button>
+                    </div>
+                    <div id="jump-result" class="mt-2"></div>
+                </div>
+            </div>
+
+            <!-- 右侧：打卡&运势 -->
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>今日运势</h5>
+                    <p>已连续打卡 <span id="streak">0</span> 天</p>
+                    <button class="btn btn-warning w-100" onclick="checkin()">点击打卡</button>
+                    <div id="checkin-result" class="mt-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 做题数据统计图表 -->
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="card p-3 chart-card">
+                    <h5>近7天做题统计</h5>
+                    <canvas id="submissionChart"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
-</div>
+
+    <!-- 引入Bootstrap JS和jQuery（用于弹窗） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 后端接口地址（本地测试用，部署后替换成Render/Vercel的地址）
+        const API_BASE = "http://127.0.0.1:5000/api";
+        // 全局变量：登录状态、用户信息
+        let isLogin = false;
+        let username = "";
+        // 图表实例
+        let submissionChart = null;
+
+        // 页面加载完成后初始化
+        window.onload = function() {
+            // 初始化图表
+            initChart();
+            // 检查登录状态
+            checkLoginStatus();
+        };
+
+        // 初始化做题统计图表
+        function initChart() {
+            const ctx = document.getElementById('submissionChart').getContext('2d');
+            submissionChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['7天前', '6天前', '5天前', '4天前', '3天前', '2天前', '昨天'],
+                    datasets: [{
+                        label: '做题数量',
+                        data: [0, 0, 0, 0, 0, 0, 0],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 检查登录状态
+        function checkLoginStatus() {
+            fetch(`${API_BASE}/home`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        // 已登录：更新用户信息
+                        isLogin = true;
+                        username = data.username;
+                        document.getElementById('user-info').innerHTML = `
+                            <span class="text-white me-3">欢迎，${username}</span>
+                            <button class="btn btn-outline-light" onclick="logout()">退出</button>
+                        `;
+                        // 更新打卡天数
+                        document.getElementById('streak').innerText = data.checkin_streak || 0;
+                        // 模拟加载做题数据（实际项目从后端获取）
+                        loadSubmissionData();
+                    } else {
+                        // 未登录：显示登录/注册按钮
+                        isLogin = false;
+                        document.getElementById('user-info').innerHTML = `
+                            <button class="btn btn-light login-btn" onclick="showLoginModal()">登录</button>
+                            <button class="btn btn-warning register-btn" onclick="showRegisterModal()">注册</button>
+                        `;
+                    }
+                })
+                .catch(err => console.log("检查登录状态失败：", err));
+        }
+
+        // 显示登录弹窗
+        function showLoginModal() {
+            const modal = new bootstrap.Modal(document.getElementById('loginModal'));
+            modal.show();
+        }
+
+        // 显示注册弹窗
+        function showRegisterModal() {
+            const modal = new bootstrap.Modal(document.getElementById('registerModal'));
+            modal.show();
+        }
+
+        // 登录逻辑
+        function login() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            const msgDom = document.getElementById('login-msg');
+
+            if (!username || !password) {
+                msgDom.innerText = "用户名和密码不能为空！";
+                return;
+            }
+
+            // 发送登录请求
+            fetch(`${API_BASE}/login`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `username=${username}&password=${password}`
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    msgDom.innerText = "";
+                    // 关闭弹窗
+                    bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+                    // 刷新登录状态
+                    checkLoginStatus();
+                    alert("登录成功！");
+                } else {
+                    msgDom.innerText = "用户名或密码错误！";
+                }
+            })
+            .catch(err => {
+                msgDom.innerText = "登录失败，请重试！";
+                console.log("登录请求失败：", err);
+            });
+        }
+
+        // 注册逻辑
+        function register() {
+            const username = document.getElementById('reg-username').value;
+            const password = document.getElementById('reg-password').value;
+            const msgDom = document.getElementById('reg-msg');
+
+            if (!username || !password) {
+                msgDom.innerText = "用户名和密码不能为空！";
+                return;
+            }
+
+            // 发送注册请求
+            fetch(`${API_BASE}/register`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `username=${username}&password=${password}`
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    msgDom.innerText = "";
+                    // 关闭弹窗
+                    bootstrap.Modal.getInstance(document.getElementById('registerModal')).hide();
+                    alert("注册成功，请登录！");
+                } else if (data.status === "exists") {
+                    msgDom.innerText = "用户名已存在！";
+                } else {
+                    msgDom.innerText = "注册失败，请重试！";
+                }
+            })
+            .catch(err => {
+                msgDom.innerText = "注册请求失败，请重试！";
+                console.log("注册请求失败：", err);
+            });
+        }
+
+        // 退出登录
+        function logout() {
+            // 清空session（实际后端需处理，这里前端模拟）
+            isLogin = false;
+            username = "";
+            checkLoginStatus();
+            alert("退出成功！");
+        }
+
+        // 打卡功能
+        function checkin() {
+            if (!isLogin) {
+                alert("请先登录！");
+                showLoginModal();
+                return;
+            }
+
+            fetch(`${API_BASE}/checkin`, {
+                method: 'POST'
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('checkin-result').innerText = data.msg;
+                document.getElementById('streak').innerText = data.streak || 0;
+            })
+            .catch(err => {
+                document.getElementById('checkin-result').innerText = "打卡失败，请重试！";
+                console.log("打卡请求失败：", err);
+            });
+        }
+
+        // 问题跳转
+        function gotoProblem() {
+            const pid = document.getElementById('pid-input').value.trim();
+            const resultDom = document.getElementById('jump-result');
+
+            if (!pid) {
+                resultDom.innerText = "请输入题目编号！";
+                resultDom.className = "text-danger mt-2";
+                return;
+            }
+
+            fetch(`${API_BASE}/goto_problem`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `pid=${pid}`
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === "success") {
+                    resultDom.innerText = `找到题目：${data.name}，即将跳转...`;
+                    resultDom.className = "text-success mt-2";
+                    // 模拟跳转（实际项目替换成真实题目页面）
+                    setTimeout(() => {
+                        alert(`跳转到题目 ${pid}：${data.name}`);
+                    }, 1000);
+                } else {
+                    resultDom.innerText = "未找到该题目！";
+                    resultDom.className = "text-danger mt-2";
+                }
+            })
+            .catch(err => {
+                resultDom.innerText = "请求失败，请重试！";
+                resultDom.className = "text-danger mt-2";
+                console.log("跳题请求失败：", err);
+            });
+        }
+
+        // 随机跳题
+        function randomProblem() {
+            fetch(`${API_BASE}/random_problem`)
+                .then(res => res.json())
+                .then(data => {
+                    const resultDom = document.getElementById('jump-result');
+                    if (data.status === "empty") {
+                        resultDom.innerText = "题库为空！";
+                        resultDom.className = "text-danger mt-2";
+                    } else {
+                        document.getElementById('pid-input').value = data.pid;
+                        resultDom.innerText = `随机推荐：${data.pid} ${data.name}`;
+                        resultDom.className = "text-success mt-2";
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('jump-result').innerText = "请求失败，请重试！";
+                    console.log("随机跳题请求失败：", err);
+                });
+        }
+
+        // 加载做题数据（模拟，实际从后端获取）
+        function loadSubmissionData() {
+            // 模拟后端返回的近7天做题数据
+            const mockData = [1, 3, 2, 0, 4, 2, 5];
+            submissionChart.data.datasets[0].data = mockData;
+            submissionChart.update();
+        }
+    </script>
 </body>
 </html>
