@@ -1,32 +1,202 @@
-/* LastKismit 洛谷风格 OJ 网站样式 */
-/* 全局背景 */
-body { 
-    background-color: #f5f7fa; 
+/* reset 基础边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* 卡片样式（问题跳转/打卡/图表卡片） */
-.card { 
-    margin-bottom: 20px; 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background-color: #f8f9fa;
 }
 
-/* 导航栏样式 */
-.navbar { 
-    background-color: #2d3748; /* 洛谷同款深色导航栏 */
-}
-.navbar-brand, .nav-link { 
-    color: white; /* 导航栏文字白色 */
-}
-.nav-link:hover { 
-    color: #ffc107; /* 鼠标悬浮变黄色 */
-}
-
-/* 登录/注册按钮间距 */
-.login-btn, .register-btn { 
-    margin-left: 10px; 
+/* 导航栏 */
+.navbar {
+    background-color: #1a1a2e;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* 图表卡片高度固定 */
-.chart-card { 
-    height: 300px; 
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00adb5;
+}
+
+/* 英雄区 */
+.hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* 搜索区 */
+.search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #00adb5;
+    box-shadow: 0 0 0 3px rgba(0,173,181,0.2);
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 99;
+    display: none;
+    margin-top: 8px;
+}
+
+.search-list {
+    list-style: none;
+}
+
+.search-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.search-list li:hover {
+    background-color: #f1f5f9;
+}
+
+.search-list a {
+    display: block;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.search-summary {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.no-result {
+    padding: 1.5rem;
+    text-align: center;
+    color: #64748b;
+}
+
+/* 文章卡片区 */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.post-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.post-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: #1a1a2e;
+}
+
+.post-card a:hover {
+    color: #00adb5;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 0.75rem;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a2e;
+    color: #a0a0c0;
+    margin-top: 2rem;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
