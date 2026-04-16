@@ -1,93 +1,134 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>我的洛谷风格题库</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- 引入洛谷同款字体 -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>高仿洛谷</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 顶部导航栏（洛谷同款深色风格） -->
-  <header class="header">
-    <div class="header-inner">
-      <div class="logo">
-        <h1>我的题库</h1>
+<header class="lg-header">
+  <div class="lg-container">
+    <a href="index.html" class="lg-logo">Luogu</a>
+    <nav class="lg-nav">
+      <a href="index.html">首页</a>
+      <a href="index.html" class="active">题库</a>
+      <a href="#">比赛</a>
+      <a href="#">讨论</a>
+      <a href="#">社区</a>
+    </nav>
+    <div class="lg-user">
+      <a href="#">登录</a>
+    </div>
+  </div>
+</header>
+
+<div class="lg-container lg-main">
+  <aside class="lg-side">
+    <div class="lg-side-title">题库分类</div>
+    <a href="#" class="lg-side-item">入门</a>
+    <a href="#" class="lg-side-item">普及-</a>
+    <a href="#" class="lg-side-item">普及</a>
+    <a href="#" class="lg-side-item">提高</a>
+    <a href="#" class="lg-side-item">省选</a>
+  </aside>
+
+  <div class="lg-content">
+    <div class="lg-card">
+      <div class="lg-card-title">题目列表</div>
+      <div class="lg-problem-list">
+        <div class="lg-problem">
+          <span class="pid">P1000</span>
+          <a href="problem.html" class="pname">A+B Problem</a>
+          <span class="diff easy">入门</span>
+        </div>
+        <div class="lg-problem">
+          <span class="pid">P1001</span>
+          <a href="problem.html" class="pname">第零题</a>
+          <span class="diff easy">入门</span>
+        </div>
+        <div class="lg-problem">
+          <span class="pid">P1002</span>
+          <a href="problem.html" class="pname">过河卒</a>
+          <span class="diff mid">普及-</span>
+        </div>
+        <div class="lg-problem">
+          <span class="pid">P1003</span>
+          <a href="problem.html" class="pname">铺地毯</a>
+          <span class="diff mid">普及-</span>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="#" class="nav-item active">首页</a>
-        <a href="#" class="nav-item">题库</a>
-        <a href="#" class="nav-item">比赛</a>
-        <a href="#" class="nav-item">讨论</a>
-        <a href="#" class="nav-item">个人中心</a>
-      </nav>
     </div>
-  </header>
+  </div>
+</div>
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>题目详情 - 高仿洛谷</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="lg-header">
+  <div class="lg-container">
+    <a href="index.html" class="lg-logo">Luogu</a>
+    <nav class="lg-nav">
+      <a href="index.html">首页</a>
+      <a href="index.html" class="active">题库</a>
+      <a href="#">比赛</a>
+      <a href="#">讨论</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- 主体内容区 -->
-  <main class="main">
-    <div class="main-inner">
-      <!-- 左侧分类栏 -->
-      <aside class="sidebar">
-        <div class="sidebar-card">
-          <div class="sidebar-title">题库分类</div>
-          <ul class="sidebar-list">
-            <li><a href="#">入门难度</a></li>
-            <li><a href="#">普及-</a></li>
-            <li><a href="#">普及/提高-</a></li>
-            <li><a href="#">提高/省选-</a></li>
-            <li><a href="#">省选/NOI-</a></li>
-          </ul>
+<div class="lg-container lg-main">
+  <div class="lg-content lg-two-col">
+    <div class="lg-problem-desc">
+      <div class="lg-card">
+        <h1>P1000 A+B Problem</h1>
+        <div class="lg-diff-tag easy">入门</div>
+        <hr>
+        <h3>题目描述</h3>
+        <p>输入两个整数 a,b，输出它们的和。</p>
+        <h3>输入格式</h3>
+        <p>一行两个整数 a,b。</p>
+        <h3>输出格式</h3>
+        <p>一个整数，表示两数之和。</p>
+        <h3>样例输入</h3>
+        <pre>1 2</pre>
+        <h3>样例输出</h3>
+        <pre>3</pre>
+      </div>
+    </div>
+
+    <div class="lg-code-area">
+      <div class="lg-card">
+        <div class="lg-code-head">
+          <span>代码编辑</span>
+          <select class="lg-select">
+            <option>C++</option>
+            <option>C</option>
+            <option>Python</option>
+          </select>
         </div>
-      </aside>
-
-      <!-- 右侧题目列表 -->
-      <section class="content">
-        <div class="content-card">
-          <div class="content-title">最新题目</div>
-          <!-- 题目列表 -->
-          <div class="problem-list">
-            <div class="problem-item">
-              <span class="problem-id">P1000</span>
-              <a href="#" class="problem-name">A+B Problem</a>
-              <span class="problem-diff diff-easy">入门</span>
-              <span class="problem-ac">AC率 98.2%</span>
-            </div>
-            <div class="problem-item">
-              <span class="problem-id">P1001</span>
-              <a href="#" class="problem-name">Hello, World!</a>
-              <span class="problem-diff diff-easy">入门</span>
-              <span class="problem-ac">AC率 99.1%</span>
-            </div>
-            <div class="problem-item">
-              <span class="problem-id">P1002</span>
-              <a href="#" class="problem-name">数列求和</a>
-              <span class="problem-diff diff-normal">普及-</span>
-              <span class="problem-ac">AC率 85.7%</span>
-            </div>
-            <div class="problem-item">
-              <span class="problem-id">P1003</span>
-              <a href="#" class="problem-name">最长上升子序列</a>
-              <span class="problem-diff diff-hard">普及/提高-</span>
-              <span class="problem-ac">AC率 72.3%</span>
-            </div>
-            <div class="problem-item">
-              <span class="problem-id">P1004</span>
-              <a href="#" class="problem-name">最短路径</a>
-              <span class="problem-diff diff-hard">提高/省选-</span>
-              <span class="problem-ac">AC率 61.5%</span>
-            </div>
-          </div>
+<textarea class="lg-code-box" placeholder="在这里写代码...">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+    int a,b;
+    cin&gt;&gt;a&gt;&gt;b;
+    cout&lt;&lt;a+b;
+    return 0;
+}</textarea>
+        <div class="lg-btn-group">
+          <button class="lg-btn lg-btn-run">测试运行</button>
+          <button class="lg-btn lg-btn-submit">提交评测</button>
         </div>
-      </section>
+        <div class="lg-result">
+          评测结果：等待提交
+        </div>
+      </div>
     </div>
-  </main>
-
-  <!-- 底部 -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <p>© 2025 我的洛谷风格题库 | 新手学习项目</p>
-    </div>
-  </footer>
+  </div>
+</div>
 </body>
 </html>
