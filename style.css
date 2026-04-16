@@ -1,17 +1,215 @@
+/* 全局重置（洛谷同款基础样式） */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: #f0f8ff;
-  font-family: Arial;
-  text-align: center;
-  padding-top: 100px;
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
 }
-.box {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px;
+
+a {
+  text-decoration: none;
+  color: #0078d4;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #005a9e;
+}
+
+/* 顶部导航栏 */
+.header {
+  background-color: #2d3748;
+  height: 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 10px #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
-h1 {
-  color: #2c3e50;
+
+.logo h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #fff;
+  border-bottom-color: #4299e1;
+}
+
+/* 主体内容区 */
+.main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.main-inner {
+  display: flex;
+  gap: 20px;
+}
+
+/* 左侧侧边栏 */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.sidebar-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.sidebar-list li {
+  margin: 10px 0;
+}
+
+.sidebar-list li a {
+  display: block;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.sidebar-list li a:hover {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+/* 右侧内容区 */
+.content {
+  flex: 1;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.content-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* 题目列表 */
+.problem-list {
+  width: 100%;
+}
+
+.problem-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.problem-item:last-child {
+  border-bottom: none;
+}
+
+.problem-id {
+  width: 70px;
+  font-weight: 600;
+  color: #718096;
+  font-size: 14px;
+}
+
+.problem-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.problem-diff {
+  width: 80px;
+  text-align: center;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.diff-easy {
+  background-color: #48bb78;
+}
+
+.diff-normal {
+  background-color: #ed8936;
+}
+
+.diff-hard {
+  background-color: #e53e3e;
+}
+
+.problem-ac {
+  width: 100px;
+  text-align: right;
+  font-size: 14px;
+  color: #718096;
+}
+
+/* 底部 */
+.footer {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
 }
